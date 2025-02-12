@@ -1,0 +1,12 @@
+version: 2.1
+
+jobs:
+  test:
+    docker:
+      - image: cimg/node:20.5.0
+    resource_class: arm.medium
+    steps:
+      - checkout
+      - run:
+          name: Run Node.js Version
+          command: node -v
