@@ -10,3 +10,8 @@ jobs:
       - run:
           name: Run Node.js Version
           command: node -v
+workflows:
+  version: 2
+  test-arm-workflow:
+    jobs:
+      - test
